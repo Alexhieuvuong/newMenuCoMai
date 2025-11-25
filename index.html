@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – Sua Chua Co Mai</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Montserrat:wght@600;700;800&family=Courier+Prime&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container header-container">
+            <!-- Logo (Centered) -->
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-text">Sữa Chua Cô Mai</span>
+                </a>
+            </div>
+
+            <!-- Contact Link (Right) -->
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Menu</h1>
+                <div class="wifi-info">
+                    <img src="images/wifi-icon.png" alt="Wifi" class="wifi-icon-img">
+                    <span class="wifi-text">Wifi: <strong>Sua Chua Co Mai</strong></span>
+                    <span class="wifi-separator">|</span>
+                    <span class="wifi-text">Pass: <strong>66668888</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container main-content">
+            <!-- Sidebar Menu -->
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#best-seller" class="active">Best Seller</a></li>
+                    <li><a href="#micay">Mì Cay</a></li>
+                    <li><a href="#che">Chè</a></li>
+                    <li><a href="#taopho">Tào Phớ</a></li>
+                    <li><a href="#sua-chua">Sữa Chua</a></li>
+                    <li><a href="#drinks">Đồ Uống</a></li>
+                    <li><a href="#anvat">Ăn Vặt</a></li>
+                </ul>
+            </aside>
+
+            <!-- Menu Sections -->
+            <div class="menu-sections">
+
+                <!-- Best Seller (Carousel) -->
+                <section id="best-seller" class="menu-category">
+                    <h2>Best Seller</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn carousel-btn-left" aria-label="Previous">‹</button>
+                        <div class="menu-grid carousel-grid">
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/mi-cay-bo-xuc-xich.jpg" alt="Mì Cay Bò Xúc Xích">
+                                </div>
+                                <h3 class="menu-item-title">Mì Cay Bò Xúc Xích</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/TraChanh.png" alt="Trà Chanh/Quất">
+                                </div>
+                                <h3 class="menu-item-title">Trà Chanh/Quất</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/SuaChuaMit.png" alt="Sữa Chua Mít">
+                                </div>
+                                <h3 class="menu-item-title">Sữa Chua Mít</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/SuaChuaTrang.png" alt="Sữa Chua Cô Mai">
+                                </div>
+                                <h3 class="menu-item-title">Sữa Chua Cô Mai</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/TaoPho.png" alt="Tào Phớ">
+                                </div>
+                                <h3 class="menu-item-title">Tào Phớ</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/CheCaramen.png" alt="Chè Caramen">
+                                </div>
+                                <h3 class="menu-item-title">Chè Caramen</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/sua-chua-nep-cam.png" alt="Sữa Chua Nếp Cẩm">
+                                </div>
+                                <h3 class="menu-item-title">Sữa Chua Nếp Cẩm</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/Tokbokki.png" alt="Tokbokki">
+                                </div>
+                                <h3 class="menu-item-title">Tokbokki</h3>
+                            </div>
+                            <div class="menu-item">
+                                <span class="heart-icon">♥</span>
+                                <div class="menu-item-image">
+                                    <img src="images/thach-dua.png" alt="Thạch Dừa">
+                                </div>
+                                <h3 class="menu-item-title">Thạch Dừa</h3>
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-right" aria-label="Next">›</button>
+                    </div>
+                </section>
+
+                <!-- Mì Cay -->
+                <section id="micay" class="menu-category">
+                    <h2>Mì Cay</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/MiCayBoXucXich.png" alt="Mì Cay Bò Xúc Xích">
+                            </div>
+                            <h3 class="menu-item-title">Mì Cay Bò Xúc Xích</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Mì Cay Bò Xúc Xích</span>
+                                    <span class="dish-price">40.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Thêm 1 Gói Mì</span>
+                                    <span class="dish-price">+10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Mì Cay Thẩp Cẩm</span>
+                                    <span class="dish-price">50.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/MiCayXucXich.png" alt="Mì Cay Xúc Xích">
+                            </div>
+                            <h3 class="menu-item-title">Mì Cay Xúc Xích</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Mì Cay Xúc Xích</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Thêm 1 Gói Mì</span>
+                                    <span class="dish-price">+10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Mì Cay Thập Cẩm</span>
+                                    <span class="dish-price">50.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/mi-cay-dac-biet-new.png" alt="Mì Cay Đặc Biệt">
+                            </div>
+                            <h3 class="menu-item-title">Mì Cay Đặc Biệt</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Mì Cay Đặc Biệt</span>
+                                    <span class="dish-price">50.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Thêm 1 Gói Mì</span>
+                                    <span class="dish-price">+10.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+                <!-- Chè -->
+                <section id="che" class="menu-category">
+                    <h2>Chè</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/SuaChuaMit.png" alt="Chè Sữa Chua">
+                            </div>
+                            <h3 class="menu-item-title">Chè Sữa Chua</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Mít</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Nếp Cẩm</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Nếp Mít</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Trà Xanh</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Nha Đam</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Sốt Xoài</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sữa Chua Thập Cẩm</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Bơ Tươi(theo mùa)</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/CheCaramen.png" alt="Chè Caramen">
+                            </div>
+                            <h3 class="menu-item-title">Chè Caramen</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Mít</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Nha Đam</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Nếp Cẩm</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Nếp Mít</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Trân Châu Thạch</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Rau Câu Sốt Xoài</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Rau Câu Sữa Dừa</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Rau Câu Trà Xanh</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Rau Câu Sữa Chua</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/CheNgocThach.png" alt="Chè Ngọc Thạch">
+                            </div>
+                            <h3 class="menu-item-title">Chè Ngọc Thạch</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Trân Châu</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Trà Xanh</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Dâu</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Cà Phê</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Cốt Dừa</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Rau Câu Chanh Leo</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/chesau.png" alt="Chè Sầu">
+                            </div>
+                            <h3 class="menu-item-title">Chè Sầu</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sầu</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Chè Sầu Mít</span>
+                                    <span class="dish-price">35.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/che-dua-dam.png" alt="Dừa Dầm">
+                            </div>
+                            <h3 class="menu-item-title">Dừa Dầm</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Dừa Dầm</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tào Phớ     -->
+                <section id="taopho" class="menu-category">
+                    <h2>Tào Phớ</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/TaoPho.png" alt="Tào Phớ">
+                            </div>
+                            <h3 class="menu-item-title">Tào Phớ</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Tào Phớ Thạch Trân Châu</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Tào Phớ Trà Xanh/Bạc Hà</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Tào Phớ Nha Đam</span>
+                                    <span class="dish-price">15.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Tào Phớ Caramen</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="sua-chua" class="menu-category">
+                    <h2>Sữa Chua</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/SuaChuaTrang.png" alt="Sữa Chua Cô Mai">
+                            </div>
+                            <h3 class="menu-item-title">Sữa Chua Cô Mai</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Trắng</span>
+                                    <span class="dish-price">8.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Nếp Cẩm</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Tươi</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Tươi 1 Lít</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/Sua-chua-deo.png" alt="Sữa Chua Dẻo">
+                            </div>
+                            <h3 class="menu-item-title">Sữa Chua Dẻo</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Thường</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Cacao</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Sốt Xoài</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Việt Quất</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Trà Xanh</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Dâu Tây</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Chua Dẻo Chanh Leo</span>
+                                    <span class="dish-price">25.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/Banh-Flan-2.png" alt="Caramen">
+                            </div>
+                            <h3 class="menu-item-title">Caramen</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen 1 Hộp</span>
+                                    <span class="dish-price">8.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen 10 Hộp</span>
+                                    <span class="dish-price">80.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Caramen Đám Cưới</span>
+                                    <span class="dish-price">Liên Hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Drinks -->
+                <section id="drinks" class="menu-category">
+                    <h2>Đồ Uống</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/TraChanh.png" alt="Trà Chanh">
+                            </div>
+                            <h3 class="menu-item-title">Trà</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Chanh</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Quất</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Nhài</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Đào </span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Vải </span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Nhiệt Đới </span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Mãng Cầu </span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Đào Cam Sả </span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Chanh Leo Kim Quất </span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/tra-sua.png" alt="Trà Sữa">
+                            </div>
+                            <h3 class="menu-item-title">Trà Sữa</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Sữa </span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Trà Sữa Các Vị </span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/nuoc-ep-dua-hau.png" alt="Nước Ép Theo Mùa">
+                            </div>
+                            <h3 class="menu-item-title">Nước Ép Theo Mùa</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Nước Ép Dưa Hấu</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Nước Ép Táo</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Nước Ép Dứa</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Nước Cam Vắt</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/milo-dam.png" alt="Đồ Uống Khác">
+                            </div>
+                            <h3 class="menu-item-title">Đồ Uống Khác</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Milo Dầm</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Cacao Nóng/Đá</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Cà Phê Đen/Nâu</span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ăn Vặt -->
+                <section id="anvat" class="menu-category">
+                    <h2>Ăn Vặt</h2>
+                    <div class="menu-grid standard-grid">
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/Kimbap-chien.png" alt="Kimbap Chiên">
+                            </div>
+                            <h3 class="menu-item-title">Kimbap Chiên</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Kimbap Chiên</span>
+                                    <span class="dish-price">40.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/nem-chua-ran.png" alt="Nem Chua Rán">
+                            </div>
+                            <h3 class="menu-item-title">Nem Chua Rán</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Đĩa Nhỏ</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Đĩa To</span>
+                                    <span class="dish-price">60.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Xúc Xích Rán</span>
+                                    <span class="dish-price">10.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/phomaique.png" alt="Phô Mai Que">
+                            </div>
+                            <h3 class="menu-item-title">Phô Mai Que</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Phô Mai Que 5 cái</span>
+                                    <span class="dish-price">35.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Sữa Tươi Chiên </span>
+                                    <span class="dish-price">20.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/khoai-tay-chien.png" alt="Khoai Tây Chiên">
+                            </div>
+                            <h3 class="menu-item-title">Khoai Tây Chiên</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Khoai Tây Chiên</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Khoai Tây Lắc Phô Mai</span>
+                                    <span class="dish-price">35.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <span class="heart-icon">♥</span>
+                            <div class="menu-item-image">
+                                <img src="images/Tokbokki.png" alt="Tokbokki">
+                            </div>
+                            <h3 class="menu-item-title">Tokbokki</h3>
+                            <button class="see-more-btn">Xem Giá</button>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span class="dish-name">Tokbokki</span>
+                                    <span class="dish-price">30.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Thêm Cá Viên</span>
+                                    <span class="dish-price">+10.000đ</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="dish-name">Thêm Xúc Xích</span>
+                                    <span class="dish-price">+10.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h6>Follow Us</h6>
+                <div class="social-icons">
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                        <!-- Simple SVG Icon for Instagram -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h6>Stay Up To Date</h6>
+                <p>On the latest news, products, and events.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                Copyright © 2025 Sua Chua Co Mai
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
