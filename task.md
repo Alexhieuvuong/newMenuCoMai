@@ -1,6 +1,6 @@
-# Task List: Clone Cong Caphe Menu
+# Task List: Sua Chua Co Mai
 
-- [x] Analyze target website (congcaphe.ca/menu) <!-- id: 0 -->
+- [x] Analyze target website (suachuacomai.netlify.app) <!-- id: 0 -->
     - [x] Extract color palette and typography <!-- id: 1 -->
     - [x] Identify key layout components (Header, Menu Grid, Footer) <!-- id: 2 -->
     - [x] List necessary assets (images, icons) <!-- id: 3 -->

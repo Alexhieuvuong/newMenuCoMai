@@ -1,11 +1,11 @@
-# Walkthrough - Cong Caphe Menu Clone
+# Walkthrough - Sua Chua Co Mai Menu
 
-I have successfully cloned the Cong Caphe Menu page and refined it for mobile usage with a polished "texture", full responsive adaptation, and enhanced interactivity.
+I have successfully cloned the Sua Chua Co Mai Menu page and refined it for mobile usage with a polished "texture", full responsive adaptation, and enhanced interactivity.
 
 ## Layout & Interactivity Updates
 
 ### Best Seller Carousel
-- **Renamed Section**: "Coffees" is now "Best Seller".
+- **Renamed Section**: "Mi Cay" is now "Best Seller".
 - **Carousel Mode**: This section retains the auto-sliding carousel behavior to highlight top items.
 - **Auto-Scroll**: Automatically scrolls through items to catch user attention.
 

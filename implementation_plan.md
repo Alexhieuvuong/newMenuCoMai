@@ -1,4 +1,4 @@
-# Implementation Plan - Cong Caphe Menu Clone
+# Implementation Plan - Sua Chua Co Mai Menu
 
 ## Goal Description
 Refine the navigation layout, restrict the carousel to the "Best Seller" section, and add a "See More" interaction for other menu items.
