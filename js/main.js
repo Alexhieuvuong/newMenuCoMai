@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault(); // Prevent default anchor behavior if applicable
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
         });
     });
 
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.style.display === 'block') {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
             modal.style.display = 'none';
         }
     });
