@@ -503,6 +503,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .social-icons a {
@@ -515,6 +516,16 @@ footer {
 
 .social-icons a:hover {
     transform: scale(1.1);
+}
+
+.social-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--army-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 
