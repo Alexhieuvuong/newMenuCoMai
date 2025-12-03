@@ -1,4 +1,4 @@
-console.log("Cong Caphe Clone - Main JS Loaded");
+console.log("Sua Chua Co Mai - Main JS Loaded");
 
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
