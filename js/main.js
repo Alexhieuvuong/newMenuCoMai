@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Toggle visibility
                 if (priceList.style.display === 'block') {
                     priceList.style.display = 'none';
-                    button.textContent = 'Xem Giá';
+                    button.textContent = 'Xem Món';
                 } else {
                     priceList.style.display = 'block';
-                    button.textContent = 'Ẩn Giá';
+                    button.textContent = 'Ẩn Món';
                 }
             }
         });
