@@ -523,16 +523,23 @@ section {
 
 .menu-item-title {
     font-family: var(--font-body);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #2d3436;
     font-weight: 600;
     line-height: 1.4;
     margin: 1rem 0 0.5rem;
 }
 
+.mini-item .menu-item-title {
+    font-size: 1.3rem;
+    letter-spacing: -0.2px;
+}
+
 @media (min-width: 768px) {
-    .menu-item-title {
-        font-size: 1.8rem;
+    .menu-item-title,
+    .mini-item .menu-item-title {
+        font-size: 1.6rem;
+        letter-spacing: 0;
     }
 }
 
