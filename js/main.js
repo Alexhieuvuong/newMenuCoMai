@@ -203,4 +203,36 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
+
+    // Notification Modal Logic
+    const notificationModal = document.getElementById('notificationModal');
+    const closeNotificationBtns = document.querySelectorAll('.close-notification, .close-notification-btn');
+
+    if (notificationModal) {
+        // Show automatically on page load
+        notificationModal.style.display = 'flex';
+
+        // Close when clicking the "x" or the "Đã Hiểu" button
+        if (closeNotificationBtns) {
+            closeNotificationBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    notificationModal.style.display = 'none';
+                });
+            });
+        }
+
+        // Close on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target == notificationModal) {
+                notificationModal.style.display = 'none';
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && notificationModal.style.display === 'flex') {
+                notificationModal.style.display = 'none';
+            }
+        });
+    }
 });
