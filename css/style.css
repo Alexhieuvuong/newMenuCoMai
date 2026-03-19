@@ -628,9 +628,12 @@ footer {
     background-color: var(--army-green);
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2.4rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -990,11 +993,12 @@ footer {
 
 .modal-content h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 1.5rem;
+    color: var(--army-green);
+    margin-bottom: 2rem;
     font-family: var(--font-heading);
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contact-options {
@@ -1010,8 +1014,9 @@ footer {
     border-radius: 12px;
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 1rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
     transition: all 0.2s ease;
     background-color: #f8f9fa;
     border: none;
