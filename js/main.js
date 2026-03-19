@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
                 }
-            }, 3000); // Scroll every 3 seconds
+            }, 2500); // Tốc độ cuộn: 2.5 giây/lần
         };
 
         // Start auto-scroll initially
@@ -134,6 +134,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
 
                     resumeInteraction();
+                });
+            }
+
+            // Create pagination indicators
+            const items = carousel.querySelectorAll('.carousel-box');
+            if (items.length > 0) {
+                const indicatorsContainer = document.createElement('div');
+                indicatorsContainer.className = 'carousel-indicators';
+                
+                const indicators = [];
+                items.forEach((_, index) => {
+                    const dot = document.createElement('button');
+                    dot.className = `indicator ${index === 0 ? 'active' : ''}`;
+                    dot.setAttribute('aria-label', `Slide ${index + 1}`);
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        pauseInteraction();
+                        carousel.scrollTo({ left: carousel.clientWidth * index, behavior: 'smooth' });
+                        resumeInteraction();
+                    });
+                    indicatorsContainer.appendChild(dot);
+                    indicators.push(dot);
+                });
+                container.appendChild(indicatorsContainer);
+
+                // Update indicators on manual scroll or auto-scroll
+                carousel.addEventListener('scroll', () => {
+                    const index = Math.round(carousel.scrollLeft / carousel.clientWidth);
+                    indicators.forEach((dot, i) => {
+                        if (i === index) {
+                            dot.classList.add('active');
+                        } else {
+                            dot.classList.remove('active');
+                        }
+                    });
                 });
             }
         }
