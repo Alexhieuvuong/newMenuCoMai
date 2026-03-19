@@ -343,14 +343,97 @@ section {
 }
 
 .carousel-grid .menu-item {
-    flex: 0 0 min(80vw, 300px);
-    scroll-snap-align: center;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.carousel-grid .menu-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .carousel-grid .menu-item {
-        flex: 0 0 350px;
+        padding: 0;
     }
+
+    .box-grid {
+        gap: 2rem;
+    }
+}
+
+.mini-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    border: 1px solid #f0f0f0;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mini-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.mini-item .heart-icon {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2rem;
+    display: block;
+}
+
+.mini-image {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .mini-item {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .mini-item .heart-icon {
+        font-size: 2.5rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .mini-image {
+        height: 160px;
+        margin-bottom: 1rem;
+    }
+}
+
+.mini-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* Standard Grid (Other Sections) - Vertical Layout */
@@ -663,29 +746,41 @@ footer {
     margin-left: 1rem;
 }
 
-/* Recommended Icon Styling */
+/* Must Try Inline Icon Styling */
 .recommended-icon {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 0.3rem;
-    color: #e74c3c;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.6rem;
+    vertical-align: middle;
 }
 
-/* Heart Icon for Best Seller Items */
+.must-try-inline {
+    height: 1.4rem;
+    width: auto;
+    display: block;
+    margin-top: -0.1rem;
+}
+
+/* Must Try Badge for Best Seller Items */
 .carousel-grid .menu-item {
     position: relative;
 }
 
 .heart-icon {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
-    color: #ff3838;
+    top: 0.6rem;
+    right: 0.6rem;
     z-index: 10;
-    opacity: 1;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.must-try-heart {
+    height: 1.6rem;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
 }
 
 /* Hide heart icon on standard grid items (non-carousel) */
@@ -960,7 +1055,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .notification-icon img {
@@ -1014,6 +1109,13 @@ footer {
 }
 
 @keyframes gentle-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }

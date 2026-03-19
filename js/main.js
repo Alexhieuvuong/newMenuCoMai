@@ -46,14 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let resumeTimeout;
 
         const getScrollAmount = () => {
-            const item = carousel.querySelector('.menu-item');
-            if (!item) return 300; // Fallback
-
-            const itemWidth = item.offsetWidth;
-            const style = window.getComputedStyle(carousel);
-            const gap = parseFloat(style.gap) || 0;
-
-            return itemWidth + gap;
+            // Scroll by the full container width for a grid-page sliding effect
+            return carousel.clientWidth;
         };
 
         const stopAutoScroll = () => {
