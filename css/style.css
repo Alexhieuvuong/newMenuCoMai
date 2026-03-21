@@ -735,7 +735,7 @@ footer {
 .price-list .price-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 0.8rem 0;
     border-bottom: 1px solid #e9ecef;
 }
@@ -758,17 +758,17 @@ footer {
 
 /* Must Try Inline Icon Styling */
 .recommended-icon {
-    display: inline-flex;
-    align-items: center;
-    margin-left: 0.6rem;
+    display: inline;
+    margin-left: 0.3rem;
     vertical-align: middle;
 }
 
 .must-try-inline {
     height: 0.9rem;
     width: auto;
-    display: block;
-    margin-top: -0.1rem;
+    display: inline;
+    vertical-align: middle;
+    margin-top: -0.2rem;
 }
 
 /* Must Try Badge for Best Seller Items */
