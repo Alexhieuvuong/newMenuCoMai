@@ -765,7 +765,7 @@ footer {
 }
 
 .must-try-inline {
-    height: 1.4rem;
+    height: 1.1rem;
     width: auto;
     display: block;
     margin-top: -0.1rem;
@@ -788,7 +788,7 @@ footer {
 }
 
 .must-try-heart {
-    height: 1.6rem;
+    height: 1.2rem;
     width: auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
 }
