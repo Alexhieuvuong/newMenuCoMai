@@ -765,7 +765,7 @@ footer {
 }
 
 .must-try-inline {
-    height: 1.1rem;
+    height: 0.9rem;
     width: auto;
     display: block;
     margin-top: -0.1rem;
@@ -788,9 +788,19 @@ footer {
 }
 
 .must-try-heart {
-    height: 1.2rem;
+    height: 1.5rem;
     width: auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+@media (max-width: 480px) {
+    .must-try-inline {
+        height: 0.75rem;
+    }
+
+    .must-try-heart {
+        height: 1.2rem;
+    }
 }
 
 /* Hide heart icon on standard grid items (non-carousel) */
